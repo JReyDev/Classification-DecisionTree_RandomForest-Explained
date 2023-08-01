@@ -26,16 +26,18 @@ class DecisionNode:
 ```
 #### Our biggest change would be how we calculate our splitting criterion, instead of using variance/MSE as a measure we use the Gini impurity. Other splitting criteria are information gain, entropy, averaging adjacent values for Gini, etc. but these will not be explained here.
 
-#### Gini is a measure of impurity of data, 
-#### •	A Gini impurity of 0 is no impurity, all values belong to the same label.
-#### •	A Gini impurity of 1 is perfect impurity, all values belong to a different label.
-#### •	A Gini impurity of 0.5 means half the labels belong to one label and the others to another.
-
 **Gini Impurity**
 
 ```math
 $$  1 - \sum_{i=1}^n \left( p_i \right)^2 $$
 ```
+
+#### Gini is a measure of impurity of data, 
+#### •	A Gini impurity of 0 is no impurity, all values belong to the same label.
+#### •	A Gini impurity of 1 is perfect impurity, all values belong to a different label.
+#### •	A Gini impurity of 0.5 means half the labels belong to one label and the others to another.
+
+
 ```
 def _best_split(self, X, y):
         # Find the best split
