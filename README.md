@@ -3,7 +3,7 @@
 #### This is for informational purposes only as these algorithms lack features. Implementing these algorithms with real life problems can be complex and this model would not suffice. I recommend using libraries such as Sci-Kit Learn, PyTorch, Keras, or Tensorflow for more complete algorithms with more features. This is just an explanation of how these algorithms generally work.
 
 #### This Classification decision tree is built in a similar way that my regression decision tree was built, the purpose of this explanation is to provide others with an explanation through code. 
-Because this code is like the regression tree model, I will only be going over changes from the decision tree but not explaining the complete code again. A complete explanation of the code can be found here.
+Because this code is like the regression tree model, I will only be going over changes from the decision tree but not explaining the complete code again. A complete explanation of the code can be found [here](https://github.com/JReyDev/Regression-DecisionTree_RandomForest-Explained).
 
 ### Classification Tree
 ```
@@ -27,6 +27,7 @@ class DecisionNode:
 #### Our biggest change would be how we calculate our splitting criterion, instead of using variance/MSE as a measure we use the Gini impurity. Other splitting criteria are information gain, entropy, averaging adjacent values for Gini, etc. but these will not be explained here.
 
 <p align="center">Gini Impurity</p>
+
 
 ```math
 $$  1 - \sum_{i=1}^n \left( p_i \right)^2 $$
