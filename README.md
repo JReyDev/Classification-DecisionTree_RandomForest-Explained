@@ -31,7 +31,7 @@ class DecisionNode:
 #### •	A Gini impurity of 1 is perfect impurity, all values belong to a different label.
 #### •	A Gini impurity of 0.5 means half the labels belong to one label and the others to another.
 
-$$ 1 - \sum_[i=1]^n  $$
+$$ 1 - \sum_[i=1]^n \left( \right) $$
 ```
 def _best_split(self, X, y):
         # Find the best split
